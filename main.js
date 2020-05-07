@@ -28,7 +28,8 @@ $(document).ready(function() {
 
     $('.quadrato').each(function(){
             var numero = genera_random(1, 10);
-            $('.quadrato').text(numero);
+            $(this).text(numero);
+            console.log(numero);
     })
 
     function genera_random(min, max) {
