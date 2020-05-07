@@ -28,8 +28,11 @@ $(document).ready(function() {
 
     $('.quadrato').each(function(){
             var numero = genera_random(1, 10);
-            $(this).text(numero);
-            console.log(numero);
+            if (numero % 2) {
+                $(this).text(numero).addClass('rosso')
+            } else {
+                $(this).text(numero);
+            }
     })
 
     function genera_random(min, max) {
