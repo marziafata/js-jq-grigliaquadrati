@@ -12,11 +12,11 @@ $(document).ready(function() {
     $('.quadrato').each(function(){
             var numero = genera_random(0, 10);
             if (numero % 2) {
-                $(this).text(numero).addClass('rosso')
+                $(this).text(numero)
             } else if (numero == 0){
                 $(this).text(numero).addClass('verde')
             } else {
-                $(this).text(numero);
+                $(this).text(numero).addClass('rosso');
             }
     })
 
